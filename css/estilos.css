@@ -327,10 +327,21 @@ a {
 	width: 4em;
 	align-self: flex-end;
 }
+.wp-logo:hover{
+	cursor: pointer;
+}
+
 
 /*  Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
-	
+	.contenedor {
+		grid-template-areas:
+			'header			header   	header'
+			'destacado		destacado 	destacado'
+			'contenido		contenido 	contenido'
+			'aside 			aside		aside'
+			'footer	 		footer 		footer';
+	}
 }
 
 /* Medium devices (tablets, 768px and up)*/
