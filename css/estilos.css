@@ -87,6 +87,7 @@ a {
 	color: #fff;
 }
 
+
 /* ---------- Articulos ----------*/
 .articulo {
 	display: flex;
@@ -139,11 +140,11 @@ a {
 }
 
 .articulo .extracto {
-	font-size: 1.25em; 
-	line-height: 1.5625rem; 
-	font-weight: 300;
-	margin-bottom: 3.125rem; 
-	color: #868b8d;
+    font-size: 1.15em;
+    line-height: 1.5625rem;
+    font-weight: 300;
+    margin-bottom: 1.125rem;
+    color: #868b8d;
 }
 .articulo .resaltar{
 	font-weight: 500;
@@ -312,7 +313,7 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    margin-top: 67vh;
+    margin-top: 84vh;
 }
 .wp-nav{
 	justify-content: flex-end;
