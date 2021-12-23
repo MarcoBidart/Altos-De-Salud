@@ -348,6 +348,14 @@ a {
 
 /*  Small devices (landscape phones, 576px and up)*/
 @media screen and (max-width: 576px) {
+  .menu {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: space-between;
+  }
+
   .contenedor {
     grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado'  'contenido		contenido 	contenido'  'aside 			aside		aside'  'footer	 		footer 		footer';
   }
@@ -355,37 +363,40 @@ a {
   .especial {
     color: white;
     cursor: pointer;
-    display: inline-flex;
-    padding: 0.425em;
+    padding: 0.625em;
     background-color: #c0c0c02f;
     border-radius: 5px;
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 2em;
-    margin-left: 9.4em;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   .articulo {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+
     &.destacado {
       grid-area: destacado;
       color: white;
       background-color: #000;
-      // box-shadow: 0px 0px 70px rgb(102 102 102 / 20%);
       display: grid;
       grid-template-columns: 1fr;
       height: 27em;
-
-      .contenedor-thumbnail {
-        min-height: 100%;
-        width: 0px;
-      }
     }
+  }
 
+  .flex {
     display: flex;
-    background: #fff;
-    // box-shadow: 0px 0px 70px rgb(102 102 102 / 20%);
-    flex-wrap: wrap;
+  }
+
+  .articulo {
+    &.destacado .contenedor-thumbnail {
+      min-height: 100%;
+      width: 0px;
+    }
 
     .contenedor-thumbnail {
       width: 100%;
@@ -400,7 +411,7 @@ a {
       justify-content: space-between;
       width: 100%;
       flex-wrap: wrap;
-      align-items: baseline;
+      align-items: center;
     }
   }
 
@@ -416,6 +427,13 @@ a {
     margin-top: 2em;
     margin-left: 0em;
     align-self: center;
+  }
+
+  .articulo .extracto {
+    font-size: 1.07em;
+    line-height: 1.5625rem;
+    font-weight: 300;
+    color: #868b8d;
   }
 }
 
