@@ -1,27 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Altos de Salud - Formulario</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilos.css" />
-    </head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Altos de Salud - Formulario</title>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/estilos.css" />
+	</head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="logo">
             <p class="iniciales-logo">AS</p>
             <h1>Altos De Salud</h1>
         </div>
         <nav class="menu">
-            <a href="./index.html">Inicio</a>
-            <a href="./pages/tienda.html">Tienda</a>
-            <a href="#">Artículos</a>
-            <a href="#">Contacto</a>
+            <a href="../index.html">Inicio</a>
+            <a href="./tienda.html">Tienda</a>
+            <a href="./error.html">Artículos</a>
+            <a href="./formulario.html">Contacto</a>
         </nav>
     </header>
+
+    <!-- Formulario -->
+  <section class="form-register">
+    <h4>Contactanos</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    
+    <p class="block">
+    <textarea class="controls" placeholder="Escriba su mensaje" name="message" rows="3"></textarea>
+    </p>
+    <input class="botons" type="submit" value="Enviar">
+    <p class="acuerdo">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+  </section>
+  
+
+  <footer class="footer">
+    <p>Copyright © 2021 Altos De Salud</p>
+</footer>
+
 </body>
 </html>
