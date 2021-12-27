@@ -349,7 +349,7 @@ a {
     flex-wrap: nowrap; }
   .articulo .titulo a {
     font-weight: 400;
-    color: #000;
+    color: #fff;
     border-bottom: solid 1px darkgrey; }
   .acido {
     grid-area: acido;
@@ -392,17 +392,34 @@ a {
       border-bottom: #868686 1px solid; }
   /*FORMULARIO  */
   section.form-register {
-    width: 50%;
+    width: 80%;
     background: #24303c;
-    padding: 1.875em;
-    padding-bottom: 4em;
+    padding: 3em 2em;
+    padding-bottom: em;
     margin: auto;
     margin-top: 2.25em;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
-    margin-bottom: 5em; } }
+    margin-bottom: 5em; }
+  body header.error-header {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%; }
+  article div.error-div h1.error-h1 {
+    font-size: 4em;
+    font-family: monospace;
+    font-weight: 100; }
+  .wp-div {
+    display: flex;
+    width: 90%;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: 39em; } }
 
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
